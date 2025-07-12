@@ -17,19 +17,19 @@ Ce projet vise à reconnaître des mots prononcés silencieusement à partir de 
 Chaque sous-dossier (mot11, mot12, etc.) 
 contient les frames extraites d’une vidéo de la prononciation d’un mot spécifique.
 ### Entraînement
-Les séquences d’images sont redimensionnées et normalisées.
-
-Un modèle CNN + LSTM est utilisé :
-
-CNN pour extraire des caractéristiques spatiales de chaque frame
-
-LSTM pour capturer la dynamique temporelle des séquences
-
-Les performances sont évaluées via la précision, la matrice de confusion, et la courbe d’apprentissage.
+    Les séquences d’images sont redimensionnées et normalisées.
+    
+    Un modèle CNN + LSTM est utilisé :
+    
+    CNN pour extraire des caractéristiques spatiales de chaque frame
+    
+    LSTM pour capturer la dynamique temporelle des séquences
+    
+    Les performances sont évaluées via la précision, la matrice de confusion, et la courbe d’apprentissage.
 
 ### Utilisation
-Entraînement du modèle : train_model(dataset_path)
-
-Test en temps réel avec la webcam ou vidéo existante
-
-Modèle exporté au format .h5 pour une réutilisation directe
+    Entraînement du modèle : train_model(dataset_path)
+    
+    Test en temps réel avec la webcam ou vidéo existante
+    
+    Modèle exporté au format .h5 pour une réutilisation directe
